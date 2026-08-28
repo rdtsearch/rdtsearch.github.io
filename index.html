@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reddit Archive</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <header class="links">
+    <a href="./index.html"><strong>Reddit Archive</strong></a>
+    <a href="./index.html" id="back">Reset</a>
+    <a href="./about.html">About</a>
+    <a href="./changelog.html">Changelog</a>
+    <span id="toggle-images-container">
+      <label class="switch">
+        <input type="checkbox" id="toggle-images-checkbox">
+        <span class="slider"></span>
+      </label>
+      <span id="toggle-images-label" style="font-size: 13px; font-weight: 600; margin-left: 6px;">Show Images</span>
+    </span>
+  </header>
+  <div id="highlight">
+    <strong>Archive Mode:</strong> Arctic Shift and Pullpush backends active. Search submissions, full comment trees, and user archives.
+  </div>
+  <div class="error" id="error"></div>
+  <div class="left">
+    <div id="searchform"></div>
+  </div>
+  <div id="status"></div>
+  <div id="reddit_link"></div>
+  <div id="paginate"></div>
+  <div id="content">
+    <div id="comments"></div>
+  </div>
+  <div id="orphans"></div>
+  <script src="./index.js"></script>
+</body>
+</html>
